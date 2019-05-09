@@ -1,0 +1,105 @@
+@media screen and (max-width: 420px) {
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .main-menu li {
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 8px;
+    }
+
+    .toggle-button {
+        text-align: center;
+        cursor: pointer;
+        color: #000;
+        margin-top: 15px;
+    }
+
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+        display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
+
+    .header-container a {
+        margin-right: -65px;
+    }
+
+    .main-menu {
+        position: relative;
+        top: 10px;
+        right: 90px;
+    }
+
+    .top-slide {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .top-slide h2 {
+        font-size: 32px;
+    }
+
+    .top-slide p {
+        font-size: 16px;
+    }
+
+    .specialize-container h3 {
+        font-size: 24px;
+    }
+
+    .specialize-container p {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .specialize-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .portfilio {
+        margin: 15px auto;
+    }
+
+    .toggles button {
+        margin: 10px 5px;
+    }
+
+    .posts {
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto;
+    }
+
+    .posts img{
+        margin-bottom: 10px;
+    }
+}
+
